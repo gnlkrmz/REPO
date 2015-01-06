@@ -1,0 +1,166 @@
+html, body, #map {
+	height: 100%;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background: #fff;
+	background-color: rgba(201, 201, 201, 1);
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	outline: none;
+	font-size: 35px;
+	line-height: 35px;
+	margin: 0px 0px 15px 0px;
+	font-weight: 800;
+	font-style: normal;
+	font-family: "Open Sans";
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 {
+	outline: none;
+	font-size: 25px;
+	line-height: 25px;
+	margin: 0px 0px 25px 0px;
+	text-align: center;
+	font-family: "Open Sans";
+	font-weight: 500;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.dataMarkerText[data-tag]::before{
+	/*
+	content: attr(data-tag);
+	*/
+	content:"";
+	padding: 8px 2px;
+	color: #333;
+	position: absolute;
+	white-space: nowrap; 
+	z-index: 20px;
+	/*
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;  
+	border-radius: 5px;
+	-moz-box-shadow: 0px 0px 4px #222;  
+	-webkit-box-shadow: 0px 0px 4px #222;  
+	box-shadow: 0px 0px 4px #222;  
+	background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);  
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+	background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);  
+	background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);  
+	background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);  
+	background-image: -o-linear-gradient(top, #eeeeee, #cccccc); 
+	*/
+	left: -152px;
+	background-color: rgba(0, 0, 0, 1);
+	/*
+	content: "";
+	height: 10px;
+	width: 50px;
+	background-color:rgba(0,0,0,0.25);
+	border-radius: 0%;
+	webkit-border-radius: 0%;
+	position:absolute;
+	left: 1530px;*/
+}
+
+#map {
+	float:left;
+	width: 60%;
+	height: 100%;
+}
+
+.contentMainPanel{
+	float:right;
+	width:34%;
+	height:100%;
+	padding:3%;
+	overflow:auto;
+	background-color: rgba(241, 241, 241, 1);
+}
+
+#contentPanelDisabled{
+	display:none;
+	position:absolute;
+	float:right;
+	right:0%;
+    
+	background-color: gray;
+    opacity: .8;
+}
+
+
+#htmlInspectionPanel {
+	width:100%;
+}
+
+.storyContainer {
+	outline: none;
+}
+
+.editable {
+    outline: none;
+    min-height: 38px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.dataMarkerText {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#container {
+    width: 960px;
+    margin: 30px auto;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 6px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.image-button-addDataMarker {
+display: none;
+position: absolute;
+top: 10px;
+right: 10px;
+border-radius: 10em;
+padding: 3px 6px 2px;
+text-decoration: none;
+font: 400 15px/16px sans-serif;
+background: #000;
+border: 1px solid #fff;
+color: #FFF;
+  
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+-webkit-transition: background 0.5s;
+  
+transition: background 0.5s;
+}
+.image-button-addDataMarker:hover {
+ background: #fff;
+}
+.image-button-addDataMarker:active {
+ background: #E54E4E;
+}
+
+.disabled {
+    background-color: gray;
+    opacity: .8;
+}
